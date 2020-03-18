@@ -45,7 +45,7 @@ for s in train dev test; do cut -f 4,5 data/$s.tsv > sentiment/$s.tsv; done
 
 ```
 mkdir topic
-for s in train dev test; do cut -f 4,5 data/$s.tsv > topic/$s.tsv; done
+for s in train dev test; do cut -f 1,5 data/$s.tsv > topic/$s.tsv; done
 ```
 
 ### FastText experiments
